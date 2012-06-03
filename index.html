@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nadaGRID - simple agnostic CSS layout</title>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch|Black+Ops+One' rel='stylesheet' type='text/css'>
+	<link href='nadaGrid.css' rel='stylesheet' type='text/css'>
+	<link href='nadaBrand.css' rel='stylesheet' type='text/css'>
+	<meta name="author" content="Patrick Boggs">
+	<!-- Date: 2012-06-02 -->
+</head>
+<body>
+	<div class="pageWrap clearfix">
+		<div class="header">
+			<h1 class="branded"><span>nada</span>GRID</h1>
+			<h2>simple <span class="branded">agnostic</span> layout</h2>
+		</div>
+		<div class="contentWrap">
+			<div class="positioning bordered gradient clearfix">
+				<h3 class="inner">What and Why.</h3>
+				<div class="nG halfBox">
+					<div class="inner">
+						<p>nadaGRID is my simple solution for grids when you do not want a grid system.<p>
+						<p>I have nothing against grids, in fact, I would recommend one if you are starting a project. This "system" was born out of a need to simplify some code without rewriting any large parts of a large project.</p>
+					</div> 
+				</div>
+				<div class="nG halfBox">
+					<div class="inner">
+						<p>It stands of the shoulders of many that have advocated the idea of a double box. The dimension declarations of width are on an outside box and anything that adds width is added to an interior div. This takes advantage of the border-box model and the fact that a block level element without declared width fills 100% of its container.</p>
+					</div> 
+				</div>
+				<div class="nG thirdBox clear">
+					<div class="inner">
+						<p>By adding dimensional styles (like padding, margin &amp; border) to an inside box without width or height declared, you are able to have your cake and eat it too. You can do full 100% width splits (50/50, 60/40, 33/33/33, 33/66) on the containers as long as all of the dimensional styles are applied to the inner box that has no width declared.</p>
+					</div> 
+				</div>
+				<div class="nG thirdBox">
+					<div class="inner">
+						<p>I also lean towards the "<a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">Single Responsibility Principle</a>" in that I recommend adding visual styles to the inner box and using classes to do so. I recommend using a preprocessor of your choice to keep "classitis" to a minimum (if you care about that sort of thing).</p> 
+					</div>
+				</div>
+				<div class="nG thirdBox">
+					<div class="inner">
+						<p>I have some basic decorative styles (bordered, gradient, shadowed etc) defined in a vanilla CSS file to use as examples. I also have a "branding" CSS file that sets styles for this page.</p>
+						<p>Use as much or as little as you want and share with your friends.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
