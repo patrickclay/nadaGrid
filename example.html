@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nadaGRID - simple agnostic CSS layout</title>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch|Black+Ops+One' rel='stylesheet' type='text/css'>
+	<link href='nadaGrid.css' rel='stylesheet' type='text/css'>
+	<link href='nadaBrand.css' rel='stylesheet' type='text/css'>
+	<meta name="author" content="Patrick Boggs">
+</head>
+<body>
+	<div class="bordered gradient clearfix">
+		<ul class="nav">
+			<li><a href="index.html">Main</a></li>
+			<li><a href="example.html">Example Page</a></li>
+			<li><a href="nested.html">Nested Example</a></li>
+		</ul>
+		<h3 class="inner">A ton of boxes. nadaGRID in practice.</h3>
+		<div class="nG halfBox">
+			<div class="inner">
+				<p>The classnames are arbitrary, you can use any naming convention that makes sense to you.<p>
+				<p>The main thing I want to show with this "system", is how easy it is to manage percentage based widths if you use a double box.</p>
+			</div> 
+		</div>
+		<div class="nG halfBox">
+			<div class="inner">
+				<p>I know there is the box-sizing method in CSS3 that does this without the extra work, but this will work in all modern browsers as well as IE6, IE7, IE8 and IE9.</p>
+				<p><a href="http://css-tricks.com/box-sizing/">Read this article</a> at CSS Tricks for more about box-sizing.</p>
+			</div> 
+		</div>
+		<div class="nG thirdBox clear">
+			<div class="inner bordered rounded">
+				<p>One third box - 33%</p>
+			</div> 
+		</div>
+		<div class="nG thirdBox">
+			<div class="inner bordered rounded">
+				<p>One third box - 33%</p>
+			</div> 
+		</div>
+		<div class="nG thirdBox">
+			<div class="inner bordered rounded">
+				<p>One third box - 33%</p>
+			</div> 
+		</div>
+		<div class="nG oneQBox clear">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+			</div> 
+		</div>
+		<div class="nG oneQBox">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+			</div> 
+		</div>
+		<div class="nG oneQBox">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+			</div> 
+		</div>
+		<div class="nG oneQBox">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+			</div> 
+		</div>
+		<div class="nG oneQBox clear">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+			</div> 
+		</div>
+		<div class="nG threeQBox">
+			<div class="inner bordered">
+				<p>three quarter box - 75%</p>
+				<p>How about some <a href="nested.html">nested boxes</a>?</p>
+			</div> 
+		</div>
+	</div>
+</body>
+</html>

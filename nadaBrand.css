@@ -3,12 +3,14 @@
 .header	{float:left; min-height:200px; min-width:320px; width:20%; padding:38px 0; background:url(nadaLogoBack.png) no-repeat 0 0;}
 	h1 span {color:#999; font-family: 'Londrina Sketch', cursive; position:relative; left:9px; top:2px;}
 	h1 {font-family: 'Black Ops One', cursive; margin:0;}
-	h2	{font-size:1.1em; margin:-16px 0 0 16px;}
+	h2	{font-size:1.65em; margin:-16px 0 0 16px;}
 
 .contentWrap	{position:relative; margin:0; width:60%; float:left;}
 .contentWrap .positioning	{margin:154px 0 0 -101px;}
 
 h3.inner	{margin-bottom:0; padding-bottom:0;}
+.nav	{padding-left:0;}
+.nav li	{display:inline; list-style:none; margin:4px 4px 0 0;}
 	
 /* utility classes - single responsibility  */	
 .shadowed,

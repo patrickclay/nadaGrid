@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nadaGRID - simple agnostic CSS layout</title>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch|Black+Ops+One' rel='stylesheet' type='text/css'>
+	<link href='nadaGrid.css' rel='stylesheet' type='text/css'>
+	<link href='nadaBrand.css' rel='stylesheet' type='text/css'>
+	<meta name="author" content="Patrick Boggs">
+</head>
+<body>
+	<div class="bordered gradient clearfix">
+		<div class="nG halfBox clear">
+			<ul class="nav">
+				<li><a href="index.html">Main</a></li>
+				<li><a href="example.html">Example Page</a></li>
+				<li><a href="nested.html">Nested Example</a></li>
+			</ul>
+			<div class="inner bordered clearfix">
+				<h4>Nested</h4>
+				<div class="nG halfBox">
+					<div class="inner bordered clearfix">
+						<p>50% box</p>
+						<div class="nG thirdBox">
+							<div class="inner gradient shadowed">
+								<p>33%</p>
+							</div> 
+						</div>
+						<div class="nG twoThirdBox">
+							<div class="inner gradient shadowed clearfix">
+								<p>66%</p>
+								<div class="nG halfBox">
+									<div class="inner gradient shadowed">
+										<p>50%</p>
+									</div> 
+								</div>
+								<div class="nG halfBox">
+									<div class="inner gradient shadowed">
+										<p>50%</p>
+									</div> 
+								</div>
+							</div> 
+						</div>
+					</div> 
+				</div>
+				<div class="nG halfBox">
+					<div class="inner bordered clearfix">
+						<p>50% box</p>
+						<div class="nG oneQBox">
+							<div class="inner gradient shadowed">
+								<p>25%</p>
+							</div> 
+						</div>
+						<div class="nG halfBox">
+							<div class="inner gradient shadowed">
+								<p>50%</p>
+							</div> 
+						</div>
+						<div class="nG oneQBox">
+							<div class="inner gradient shadowed">
+								<p>25%</p>
+							</div> 
+						</div>
+					</div> 
+				</div>
+			</div> 
+		</div>
+		<div class="nG oneQBox">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+			</div> 
+		</div>
+		<div class="nG oneQBox">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+			</div> 
+		</div>
+		<div class="nG oneQBox">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+				<p>Not cleared for new row.</p>
+			</div> 
+		</div>
+		<div class="nG oneQBox">
+			<div class="inner bordered">
+				<p>one quarter box - 25%</p>
+			</div> 
+		</div>
+	</div>
+</body>
+</html>

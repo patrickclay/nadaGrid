@@ -1,16 +1,16 @@
 /* nadaGrid Agnostic layout system */
 /* Pat's modified reset.css - not much to see here. move along */
 fieldset,img{border:0;}
-blockquote,ul,ol,dl {margin:1em;}
+blockquote,ul,ol,dl {margin:.5em;}
 li	{margin:.5em inherit;}
 /* end reset css */
 /* ####################################################### */
 
 /* Style guide / buildup */
 /* begin tag level CSS */
-body {font-family:Arial,Helvetica,sans-serif; font-size:150%;}
-h1 {font-size:2.6em; margin:0;}
-h2 {font-size:1.4em; margin:.25em 0;}
+body {font-family:Arial,Helvetica,sans-serif; font-size:100%;}
+h1 {font-size:3.9em; margin:0;}
+h2 {font-size:2.1em; margin:.25em 0;}
 h3 {font-size:1.2em; margin:.25em 0;}
 h4 {font-size:1em; margin:.5em 0;}
 h5 {font-size:1em; margin:.5em 0 0;}
@@ -19,14 +19,17 @@ p, td, th, li    {font-size:80%;} /* most used text elements */
 td p, td li	{font-size:100%;} /* set the interior font-sizes */
 p	{margin:.8em 0;} /* a little fixed margin for my OCD - change to your tastes */
 a {color:#369;}
-a:visited {color:#333;}
+a:visited {color:#330099;}
+a:hover	{color:#0c0;}
 table	{border-collapse:collapse; border:1px solid #333; border-spacing:0;} /* I like a default border on my tables */
 /* ####################################################### */
 
 
-/* modular elements */
-.nG	{margin:0; z-index:1001; position:relative;} /* make sure you clear floats at the start of new rows if not equal height */
-.inner	{margin:12px; padding:12px;} /* used to do floated layouts and have "padding" applied to inner box */
+/* the grid */
+.nG	{margin:0; position:relative;} /* make sure you clear floats at the start of new rows if not equal height */
+
+.inner	{margin:6px; padding:12px;} /* used to do floated layouts and have "padding" applied to inner box */
+
 /* miniature grid system for double boxes */
 .halfBox	{width:50%; float:left;}
 .thirdBox	{width:33.3%; float:left;}
@@ -56,47 +59,10 @@ table	{border-collapse:collapse; border:1px solid #333; border-spacing:0;} /* I 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
 }
 
-.radial {  
-   	background-color:#f5f50c;
-	background-image: -moz-radial-gradient(15% 35%, ellipse farthest-corner, #f5f50c, #ff8519 33%);
-	background-image: -webkit-radial-gradient(15% 35%, ellipse farthest-corner, #f5f50c, #ff8519 33%);
-	background-image: -o-radial-gradient(15% 35%, ellipse farthest-corner, #f5f50c, #ff8519 33%);
-	background-image: -ms-radial-gradient(15% 35%, ellipse farthest-corner, #f5f50c, #ff8519 33%);
-	background-image: radial-gradient(15% 35%, ellipse farthest-corner, #f5f50c, #ff8519 33%);
-	 background-attachment:fixed;
-	}
-
 .shadowed	{-webkit-box-shadow: 0 0 4px 0 #333; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
           box-shadow: 0 0 4px 0 #333; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */}
-.innerShadowed	{-moz-box-shadow:    inset 0 0 10px #333;
-		   -webkit-box-shadow: inset 0 0 10px #333;
-		   box-shadow:         inset 0 0 10px #333;}
-		
-.transparent	{background-color: transparent;
-  background-color: rgba(255, 255, 255, 0.75) !important;  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9 */
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99B4B490,endColorstr=#99B4B490); /* IE6–IE9 */
-            zoom: 1;}
-
-.rotated	{-webkit-transform: rotate(1.5deg);  /* Saf3.1+, Chrome */
-			     -moz-transform: rotate(1.5deg);  /* FF3.5+ */
-			      -ms-transform: rotate(1.5deg);  /* IE9 */
-			       -o-transform: rotate(1.5deg);  /* Opera 10.5 */
-			          transform: rotate(1.5deg);
-			             filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
-			                     M11=0.9996573249755573, M12=-0.02617694830787315, M21=0.02617694830787315, M22=0.9996573249755573, sizingMethod='auto expand');
-			               zoom: 1;}
-.negRotated	{ -webkit-transform: rotate(-2.5deg); 
-						     -moz-transform: rotate(-2.5deg); 
-						      -ms-transform: rotate(-2.5deg); 
-						       -o-transform: rotate(-2.5deg); 
-						          transform: rotate(-2.5deg);
-						             filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
-						                     M11=0.9990482215818578, M12=0.043619387365336, M21=-0.043619387365336, M22=0.9990482215818578, sizingMethod='auto expand');
-						               zoom: 1;}
 
 /* ####################################################### */
-/* ####################################################### */
-/* rework after initial test pages are done */
 /* Utility classes */
 .clear 	{clear:both;}
 
