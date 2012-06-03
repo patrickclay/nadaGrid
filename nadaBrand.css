@@ -1,18 +1,39 @@
 .pageWrap	{position:relative; padding-bottom:20px;}
 
-.header	{float:left; min-height:200px; min-width:320px; width:20%; padding:38px 0; background:url(nadaLogoBack.png) no-repeat 0 0;}
+.header	{float:left; min-height:200px; width:25%; padding:4% 0; background:url(nadaLogoBack.png) no-repeat 0 0; background-size: contain;}
 	h1 span {color:#999; font-family: 'Londrina Sketch', cursive; position:relative; left:9px; top:2px;}
 	h1 {font-family: 'Black Ops One', cursive; margin:0;}
-	h2	{font-size:1.65em; margin:-16px 0 0 16px;}
+	h2	{font-size:1.65em; margin:-4.5% 0 0 4.5%;}
 
-.contentWrap	{position:relative; margin:0; width:60%; float:left;}
-.contentWrap .positioning	{margin:154px 0 0 -101px;}
+.contentWrap	{position:relative; margin:0; width:70%; float:left;}
+.contentWrap .positioning	{margin:17% 0 0 -11.2%;}
 
 h3.inner	{margin-bottom:0; padding-bottom:0;}
 .nav	{padding-left:0;}
 .nav li	{display:inline; list-style:none; margin:4px 4px 0 0;}
 	
 /* utility classes - single responsibility  */	
-.shadowed,
 h2	{text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);}
 .branded {color:#0c0;}
+
+/* media query for main page layout */
+/* I am probably taking this too far */
+@media all and (max-width:1200px) {
+	.header	{font-size:90%; min-height:180px;}
+}
+@media all and (max-width:1100px) {
+	.header	{font-size:80%; min-height:170px;}
+}
+@media all and (max-width:1100px) {
+	.header	{font-size:70%; min-height:160px;}
+}
+@media all and (max-width:880px) {
+	.header	{font-size:70%; min-height:150px;}
+	h2	{text-shadow: 0 0 0 rgba(0, 0, 0, 0.4);}
+}
+@media all and (max-width:800px) {
+	.header	{font-size:60%; min-height:130px;}
+}
+@media all and (max-width:750px) {
+	.header	{font-size:50%; min-height:100px;}
+}
