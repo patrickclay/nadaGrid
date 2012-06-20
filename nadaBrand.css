@@ -15,6 +15,7 @@ h3.inner	{margin-bottom:0; padding-bottom:0;}
 /* utility classes - single responsibility  */	
 h2	{text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);}
 .branded {color:#0c0;}
+.floatR	{float:right;}
 
 /* media query for main page layout */
 /* I am probably taking this too far */
